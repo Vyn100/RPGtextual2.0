@@ -12,20 +12,20 @@ document.getElementById('startAdventure').addEventListener('click', function () 
 
         // Formulaire pour la création de personnage
         slot.innerHTML = `
-<form class="character-form">
-    <input name="name" type="text" placeholder="Nom du personnage" required />
-    <div class="attribute-container">
-        <div class="attribute-field"><label>PV/HP: </label><input type="number" name="hp" value="0" min="0" max="${totalPoints}" required /></div>
-        <div class="attribute-field"><label>Force: </label><input type="number" name="force" value="0" min="0" max="${totalPoints}" required /></div>
-        <div class="attribute-field"><label>Intelligence: </label><input type="number" name="intelligence" value="0" min="0" max="${totalPoints}" required /></div>
-        <div class="attribute-field"><label>Chance: </label><input type="number" name="chance" value="0" min="0" max="${totalPoints}" required /></div>
-        <div class="attribute-field"><label>Défense: </label><input type="number" name="defense" value="0" min="0" max="${totalPoints}" required /></div>
-        <div class="attribute-field"><label>Esquive: </label><input type="number" name="esquive" value="0" min="0" max="${totalPoints}" required /></div>
-        <div class="attribute-field"><label>Coups Critiques: </label><input type="number" name="CC" value="0" min="0" max="${totalPoints}" required /></div>
-    </div>
-    <div class="points-remaining">Points restants : <span id="pointsRemaining${i}">${totalPoints}</span></div>
-    <button type="submit">Créer</button>
-</form>
+        <form class="character-form">
+            <input name="name" type="text" placeholder="Nom du personnage" required />
+            <div class="attribute-container">
+                <div class="attribute-field"><label>PV/HP: </label><input type="number" name="hp" value="0" min="0" max="${totalPoints}" required /></div>
+                <div class="attribute-field"><label>Force: </label><input type="number" name="force" value="0" min="0" max="${totalPoints}" required /></div>
+                <div class="attribute-field"><label>Intelligence: </label><input type="number" name="intelligence" value="0" min="0" max="${totalPoints}" required /></div>
+                <div class="attribute-field"><label>Chance: </label><input type="number" name="chance" value="0" min="0" max="${totalPoints}" required /></div>
+                <div class="attribute-field"><label>Défense: </label><input type="number" name="defense" value="0" min="0" max="${totalPoints}" required /></div>
+                <div class="attribute-field"><label>Esquive: </label><input type="number" name="esquive" value="0" min="0" max="${totalPoints}" required /></div>
+                <div class="attribute-field"><label>Coups Critiques: </label><input type="number" name="CC" value="0" min="0" max="${totalPoints}" required /></div>
+            </div>
+            <div class="points-remaining">Points restants : <span id="pointsRemaining${i}">${totalPoints}</span></div>
+            <button type="submit">Créer</button>
+        </form>
 `;
 
         // Gérer la soumission du formulaire
@@ -69,11 +69,11 @@ document.getElementById('startAdventure').addEventListener('click', function () 
     }
 });
 
-document.getElementById('playGame').addEventListener('click', function() {
+document.getElementById('playGame').addEventListener('click', function () {
     // Cacher la création de personnage et montrer l'interface de jeu
     document.querySelector('.character-creation-container').style.display = 'none';
     document.querySelector('.game-interface-container').style.display = 'flex';
-    
+
     // Mettre à jour l'interface de jeu selon le personnage créé
     // ...
 });
