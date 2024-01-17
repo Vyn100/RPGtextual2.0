@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'VT323';
+    src: url(./font/VT323-Regular.ttf);
+}
+
+body {
+    font-family: 'VT323', monospace;
+    /* La police */
+    font-size: 33px;
+    margin: 0;
+    /* Pour éviter les marges */
+    padding: 0;
+    /* Pour éviter les marges */
+    display: flex;
+    /* Pour utiliser flex */
+    justify-content: center;
+    /* Pour centrer le contenu */
+    align-items: center;
+    /* Pour centrer le contenu */
+    height: 100vh;
+    /* Pour prendre toute la hauteur de l'écran */
+    background-color: #000000d2;
+    /* Pour changer la couleur de fond */
+}
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    width: 50%;
+    height: 25%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #000000d0;
+    font-size: 1.8rem;
+}
+
+button {
+    font-family: 'VT323', monospace;
+    /* La police */
+    font-size: 33px;
+    /* La taille de la police */
+    color: #fff;
+    /* La couleur du texte */
+    background-color: #007bff;
+    /* La couleur du fond */
+    border: 1px solid #007bff;
+    /* La bordure */
+    border-radius: 5px;
+    /* Les coins arrondis */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.character-creation-container {
+    text-align: center;
+    /* Centre */
+    width: 80%;
+    /* Largeur */
+    max-width: 80%;
+    /* Largeur maximale */
+    height: 70%;
+    /* Hauteur */
+    padding: 20px;
+    /* Marge intérieure */
+    border: 2px solid #000000;
+    /* Bordure */
+    border-radius: 10px;
+    /* Coins arrondis */
+    background-color: #fff;
+    /* Fond blanc */
+    margin-top: 20px;
+    /* Marge haute */
+    background-color: #000000ab;
+    /* Pour changer la couleur de fond */
+    color: white;
+    /* Pour changer la couleur du texte */
+}
+
+#characterSlots {
+    display: flex;
+    /* Flex */
+    height: 80%;
+    /* Hauteur */
+    justify-content: space-between;
+    /* Espace entre les éléments */
+    margin-bottom: 20px;
+    /* Marge basse */
+    margin-top: 20px;
+}
+
+.character-slot {
+    width: 28%;
+    /* Largeur */
+    padding: 10px;
+    /* Marge intérieure */
+    border: 2px dashed #ccc;
+    /* Bordure pointillée */
+    border-radius: 5px;
+    /* Coins arrondis */
+    cursor: pointer;
+    /* Curseur */
+}
+
+.character-slot.active {
+    border-style: solid 3px;
+    /* Bordure pleine */
+    border-color: #007bff;
+    /* Bordure bleue */
+}
+
+button:disabled {
+    background-color: #cccccc;
+    /* Fond gris */
+}
+
+.character-form {
+    display: flex;
+    /* Flex */
+    flex-direction: column;
+    /* Flexdirection en colonne */
+    height: 100%;
+    /* Hauteur */
+}
+
+.character-form input,
+.character-form select {
+    margin-bottom: 10px;
+    /* Marge basse */
+    padding: 5px;
+    /* Marge intérieure */
+    border: 1px solid #ccc;
+    /* Bordure */
+    border-radius: 5px;
+    /* Coins arrondis */
+}
+
+.character-form button {
+    padding: 5px 10px;
+    /* Marge intérieure */
+    border: 1px solid #ccc;
+    /* Bordure */
+    margin-bottom: 0;
+}
+
+.attribute-container {
+    display: flex;
+    /* Flex */
+    flex-wrap: wrap;
+    /* Retour à la ligne */
+    justify-content: space-between;
+    /* Espace entre les éléments */
+    margin-bottom: 10px;
+    /* Marge basse */
+}
+
+.attribute-field {
+    display: flex;
+    /* Flex */
+    width: 100%;
+    /* Largeur */
+    align-items: center;
+    /* Alignement vertical */
+    margin-bottom: 10px;
+    /* Marge basse */
+}
+
+.attribute-field label {
+    margin-right: 5px;
+    /* Ajoutez une marge à droite pour espacer le label et l'input */
+}
+
+.attribute-field input {
+    width: 50px;
+    /* Largeur */
+    margin-left: 5px;
+    /* Ajoutez une marge à gauche pour espacer le label et l'input */
+}
+
+.character-form button {
+    margin-top: 10px;
+    /* Marge haute */
+    padding: 5px 10px;
+    /* Marge intérieure */
+}
+
+.bold {
+    font-weight: bold;
+    /* Gras */
+}

@@ -1,0 +1,91 @@
+/* reset.css */
+
+/* Reset des styles par défaut */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+/* Réinitialisation des styles pour les listes */
+ol,
+ul {
+    list-style: none;
+}
+
+/* Réinitialisation des styles pour les liens */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Réinitialisation des styles pour les tableaux */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Réinitialisation des styles pour les images */
+img {
+    max-width: 100%;
+    height: auto;
+}
