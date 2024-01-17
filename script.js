@@ -13,7 +13,7 @@ document.getElementById('startAdventure').addEventListener('click', function () 
         // Formulaire pour la création de personnage
         slot.innerHTML = `
 <form class="character-form">
-    <input type="text" placeholder="Nom du personnage" required />
+    <input name="name" type="text" placeholder="Nom du personnage" required />
     <div class="attribute-container">
         <div class="attribute-field"><label>PV/HP: </label><input type="number" name="hp" value="0" min="0" max="${totalPoints}" required /></div>
         <div class="attribute-field"><label>Force: </label><input type="number" name="force" value="0" min="0" max="${totalPoints}" required /></div>
@@ -67,4 +67,13 @@ document.getElementById('startAdventure').addEventListener('click', function () 
 
         characterSlots.appendChild(slot);
     }
+});
+
+document.getElementById('playGame').addEventListener('click', function() {
+    // Cacher la création de personnage et montrer l'interface de jeu
+    document.querySelector('.character-creation-container').style.display = 'none';
+    document.querySelector('.game-interface-container').style.display = 'flex';
+    
+    // Mettre à jour l'interface de jeu selon le personnage créé
+    // ...
 });

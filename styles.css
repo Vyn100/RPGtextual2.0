@@ -192,3 +192,98 @@ button:disabled {
     font-weight: bold;
     /* Gras */
 }
+
+/* Interface du jeu ⬇ */
+.game-interface-container {
+    display: flex;
+    /* Afficher les sections en ligne */
+    flex-direction: column;
+    /* Disposer les sections verticalement */
+    width: 95%;
+    /* Largeur de 90% */
+    height: 98%;
+    /* Hauteur de 100% */
+}
+
+.location-section,
+.character-section,
+.actions-section {
+    border: 1px solid #ccc;
+    /* Bordure */
+    padding: 10px;
+    /* Marge intérieure */
+}
+
+.location-section {
+    display: flex;
+    /* Afficher les éléments en ligne */
+    justify-content: space-around;
+    /* Espace entre les éléments */
+    height: 5%;
+    /* Hauteur de 5% */
+    border-radius: 10px 10px 0 0;
+    /* Coins supérieurs arrondis */
+    color: white;
+    /* Texte blanc */
+    background-color: #000000ab;
+    /* Fond noir */
+    border-bottom: none;
+    /* Pas de bordure basse */
+}
+
+.character-section {
+    flex-grow: 2;
+    /* La section character prendra deux fois plus d'espace que les autres */
+    border-top: none;
+    /* Pas de bordure haute */
+    border-bottom: none;
+    /* Pas de bordure basse */
+}
+
+.actions-section {
+    display: flex;
+    /* Afficher les boutons en ligne */
+    justify-content: center;
+    /* Centrer horizontalement les boutons */
+    align-items: center;
+    /* Centrer verticalement les boutons */
+    border-radius: 0 0 10px 10px;
+    /* Coins inférieurs arrondis */
+    height: 10%;
+    /* Hauteur de 10% */
+    border-top: none;
+    /* Pas de bordure haute */
+    background-color: #000000ab;
+    /* Fond noir */
+    color: white;
+    /* Texte blanc */
+}
+
+.actions-section button {
+    display: block;
+    /* Afficher en block */
+    width: fit-content;
+    /* Largeur */
+    padding: 10px;
+    /* Marge intérieure */
+    margin-bottom: 10px;
+    /* Marge basse */
+    font-size: 18px;
+    /* Taille de la police */
+    cursor: pointer;
+    /* Curseur */
+    border: none;
+    /* Pas de bordure */
+    border-radius: 5px;
+    /* Coins arrondis */
+    background-color: #007bff;
+    /* Fond bleu */
+    color: white;
+    /* Texte blanc */
+}
+
+.actions-section button:hover {
+    background-color: #0056b3;
+    /* Couleur de fond */
+}
+/* Fin interface du jeu ⬆ */

@@ -19,10 +19,25 @@
         <h2 class="bold">Création de personnage</h2>
         <div id="characterSlots">
             <!-- Les slots de personnages avec des formulaires seront générés ici par JavaScript -->
-        </div>               
-        <button id="playGame" disabled>Jouer</button>
+        </div>
+        <button id="playGame">Jouer</button>
     </div>
-
+    <div class="game-interface-container" style="display:none;">
+        <div class="location-section">
+            <h2>Localisation :</h2>
+            <p id="locationDescription">Vous êtes dans une forêt sombre...</p>
+        </div>
+        <div class="character-section">
+            <h2>Votre personnage</h2>
+            <p id="characterDescription">[Description du personnage]</p>
+        </div>
+        <div class="actions-section">
+            <h2>Actions</h2>
+            <button>Explorer</button>
+            <button>Reposer</button>
+            <!-- Ajoutez d'autres boutons pour différentes actions ici -->
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 
